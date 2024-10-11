@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorldByCapital</title>
+    <link rel="stylesheet" href="css/WorldByAnything.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="header">
+        <div class="username">
+            <h1 id="username">Username</h1>
+        </div>
+
+        <div class="settings">
+            <h1> Settings</h1>
+            <label for="IncludeIndependentCountries"> Independent Countries </label>
+            <input type="checkbox" name="IncludeIndependentCountries" id="IncludeIndependentCountries">
+            <label for="OptionLandlocked"> Asking if Landlocked</label>
+            <input type="checkbox" name="OptionLandlocked" id="OptionLandlocked" checked>
+            <label for="OptionBorderedCountries"> Asking for Bordered Countries</label>
+            <input type="checkbox" name="OptionBorderedCountries" id="OptionBorderedCountries">
+            
+            <div class="dropdownRegion">
+                <button>Play specific Region</button>
+                <ul class="dropdownContent">
+                    <li>All</li>
+                    <li>Europe</li>
+                    <li>Americas</li>
+                    <li>Africa</li>
+                    <li>Asia</li>
+                    <li>Oceania</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="leaderboard">
+            <h1>Leaderboard</h1>
+            <div class="switch-field">
+                <input type="radio" id="radio-one" name="switch" value="Country" checked/>
+                <label for="radio-one">Country</label>
+                <input type="radio" id="radio-two" name="switch" value="Capital" />
+                <label for="radio-two">Capital</label>
+                <input type="radio" id="radio-three" name="switch" value="Flag" />
+                <label for="radio-three">Flag</label>
+            </div>
+            <h3>Points:</h3>
+            <div class="counter"> 10</div>
+        </div>
+
+    </div>
+    
+    <div class="content">
+
+        <div class="switch">
+            <div class="switch-field">
+                <input type="radio" id="radio-four" name="switch-two" value="Country" checked/>
+                <label class="radioLabel" for="radio-four">Country</label>
+                <input type="radio" id="radio-five" name="switch-two" value="Capital" />
+                <label class="radioLabel" for="radio-five">Capital</label>
+                <input type="radio" id="radio-six" name="switch-two" value="Flag" />
+                <label class="radioLabel" for="radio-six">Flag</label>
+            </div>
+        </div>
+
+        <h1 id="Headline"> World by Country</h1>
+
+        <div class="byCountry">
+            <div class="showCountry">
+                <p>Random Country:</p>
+                <p id="randomCountry"> </p>
+                <button class="StartQuiz" onclick="initializeByCountry()"> Start Quiz</button>
+            </div>
+              
+            <div class="askCapital">
+                <input type="text" id="capitalGuess" placeholder="Type in Capital City">
+                <p> Capital</p>
+                <button onclick="checkIfCapitalCorrect()"> Check</button>
+                <p class="showResult"></p>
+            </div>
+           
+            <div class="askFlag">
+                <input type="checkbox" id="firstCheck" style="display: none;"/>
+                <input id="firstFlag" type="image" src="media/placeholder_flag.png" alt="">
+                
+                <input type="checkbox" id="secondCheck" style="display: none;" />
+                <input id="secondFlag" type="image" src="media/placeholder_flag.png" alt="">
+                
+                <input type="checkbox" id="thirdCheck" style="display: none;" />
+                <input id="thirdFlag" type="image" src="media/placeholder_flag.png" alt="">
+
+                <input type="checkbox" id="fourthCheck" style="display: none;" />
+                <input id="fourthFlag" type="image" src="media/placeholder_flag.png" alt="">
+
+                <p>Pick correct flag</p>
+                <button onclick="checkIfFlagCorrect()"> Check</button>
+                <p class="showResult"></p>
+            </div>
+
+            <div class="askLandlocked" id="askLandlocked">
+                <p> Is the Country Landlocked? </p>
+                <label for="isLandlocked"> Yes/No </label>
+                <input type="checkbox" name="isLandlocked" id="isLandlocked">
+                <button onclick="checkIfLandlockedCorrect()"> Check </button>
+                <p class="showResult"></p>
+            </div>
+
+            <div class="askBorder" id="askBorder" style="display: none;">
+                <input type="text" id="borderGuess">
+                <p> Bordered Countries</p>
+                <button > Check </button>
+                <p class="showResult"></p>
+            </div>   
+            
+        </div>
+
+        <div class="byFlag" style="display: none"></div>
+
+        <div class="byCapital" style="display: none"></div>
+
+    </div>
+
+
+    <script src="js/cookieHandler.js"></script>
+    <script src="js/fetchData.js"></script>
+
+
+</body>
+</html>

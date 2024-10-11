@@ -1,0 +1,213 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+  
+
+
+:root{
+  --black: hsla(228, 100%, 1%, 1);
+  --oxford-blue: hsla(211, 67%, 13%, 1);
+  --indigo-dye: hsla(204, 86%, 20%, 1);
+  --indigo-dye-2: hsla(202, 100%, 24%, 1);
+  --pacific-cyan: hsla(193, 96%, 42%, 1);
+  --satin-sheen-gold: hsla(49, 46%, 49%, 1);
+
+  --ff: "Montserrat", sans-serif;
+
+  --fw-regular: 500;
+  --fw-bold:700;
+}
+
+
+
+body{
+  font-family: var(--ff);
+  font-weight: var(--fw-regular);
+  font-size: 1rem;
+
+  background-image: url(../media/planet-earth-background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 5fr;
+  /* place-content: center; */
+  min-height: 100vh;
+  margin: 1rem;
+}
+
+
+
+.header{
+  /* border: solid; */
+
+  background-color: rgba(11,32,55,0.7);
+  height: 650px;
+  border-radius: 1.0rem;
+  display: grid;
+  grid-template-rows: 1fr 7fr 7fr;
+  color: var(--satin-sheen-gold);
+}
+
+.header > *{
+  display:grid;
+  margin: 1rem;
+}
+
+#username{
+  background-color: var(--indigo-dye);
+  text-align: center;
+  border-radius: 0.25rem;
+  padding:0.5rem;
+}
+
+.content{
+  --content_padding: 5rem;
+  --content_gap: 10rem;
+
+  background-color: rgba(11,32,55,0.7);
+  height: 650px;
+  border-radius: 1.0rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr 13fr;
+  color: var(--satin-sheen-gold);
+}
+
+.content > *{
+  margin:1rem;
+}
+
+.byCountry{
+  display: grid;
+  gap: 1.5rem;
+}
+
+.byCountry > *{
+  display:flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+
+
+}
+
+input, button{
+  box-shadow: none;
+  border: none;
+  padding: 0.5rem;
+  background-color: var(--indigo-dye);
+  color: var(--satin-sheen-gold);
+  text-align: center;
+  border-radius: 0.25rem;
+}
+
+input:hover , button:hover{
+  background-color: var(--indigo-dye-2);
+}
+
+
+.askFlag > input{
+  height: 4rem;
+}
+
+/* switch Field Styling */
+.switch-field {
+	display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.switch-field input {
+	position: absolute !important;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	border: 0;
+}
+
+.switch-field label {
+	background-color: var(--indigo-dye);
+	color: var(--satin-sheen-gold);
+	line-height: 1;
+	text-align: center;
+	padding: 1rem;
+	transition: all 0.1s ease-in-out;
+  height: min-content;
+  width: 100%;
+}
+
+.switch-field label:hover {
+	cursor: pointer;
+}
+
+.switch-field input:checked + label {
+	background-color: var(--indigo-dye-2);
+	box-shadow: none;
+}
+
+.switch-field label:first-of-type {
+	border-radius: 4px 0 0 4px;
+}
+
+.switch-field label:last-of-type {
+	border-radius: 0 4px 4px 0;
+}
+
+
+#firstCheck:checked + #firstFlag {
+  background-color: var(--satin-sheen-gold);
+}
+
+#secondCheck:checked + #secondFlag {
+  background-color: var(--satin-sheen-gold);
+}
+
+#thirdCheck:checked + #thirdFlag {
+  background-color: var(--satin-sheen-gold);
+}
+
+#fourthCheck:checked + #fourthFlag {
+  background-color: var(--satin-sheen-gold);
+}
+
+
+@media (max-width: 900px){
+  body{
+    grid-template-columns: 1fr;
+  }
+
+  .content{
+    grid-row: 1;
+    overflow: scroll;
+  }
+
+}

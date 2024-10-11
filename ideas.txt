@@ -1,0 +1,43 @@
+Brainstorm Länderquiz:	
+
+Eine Webseite mehrere Quizzes!
+	- ein Menüband in dem man aussuchen kann, welche Art Quiz man machen möchte
+	- random Quiz möglich
+	- Fortschritt in Session speichern
+		- evtl demnächst in Datenbank speichern
+
+1. Abfrage Spielername
+
+2. Spielbare Optionen in RasterFormat
+	- nach Land (man soll Optionen haben was abgefragt wird)
+		- Hauptstadt bei gegebenem Land +1P	
+		- Flagge aus 4 gegebenen aussuchen +1P
+		- Nachbarländer bei gegebenem Land (Anzeige wieviele Nachbarländer) +2P
+	- nach Flagge:
+		- Land 
+		- Nachbarländer
+		- Hauptstadt
+	- nach Hauptstadt
+		- Land
+		- Nachbarländer
+		- Flagge
+
+3. Einstellungen:
+	- Option: mit dependent Countries oder nicht
+	- Option: welche Region?
+	- option: Landlocked oder nicht?
+	- punktestand: Bereich FLagge/Land/hauptstadt
+		- evtl Fortschritt? Regionen Anzeigen
+
+
+html:
+- jeder Bereich eigene Seite
+	1. Spielername einloggen
+	2. Menü anzeigen (3 Spieloptionen + Einstellungen)
+	3. nach Land
+	4. nach Flagge
+	5. nach Hauptstadt
+	6. Einstellungen: zweigeteilt links Einstellungen (3 Optionen) rechts Punktestand etc:
+
+
+

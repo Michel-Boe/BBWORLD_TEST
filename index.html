@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start ByeByeWorld</title>
+    <!-- <link rel="stylesheet" href="css/StartScreen.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+    <div class="content">
+        <div class="startElements">
+            <input id="playernameInput" type="text" placeholder="Your Name">
+            <button id="startButton"> Start</button>
+        </div>
+
+        <div class="endElements" style="display: none;">
+            <button class="optionButton" style="display: none;" onclick="navigateTo('WorldByAnything.html')"> By Country </button>
+            <button class="optionButton" style="display: none;" onclick="navigateTo('WorldByAnything.html')"> By Flag </button>
+            <button class="optionButton" style="display: none;" onclick="navigateTo('WorldByAnything.html')"> By Capital </button>
+        </div>
+    </div>
+
+    <script src="js/cookieHandler.js"></script>
+    <script src="js/StartScreen.js"></script>
+
+
+
+</body>
+</html>
