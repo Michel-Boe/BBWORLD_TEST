@@ -211,3 +211,24 @@ input:hover , button:hover{
   }
 
 }
+
+
+/* .dropdownRegion{
+  position: relative;
+  display: inline-block
+} */
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: var(--indigo-dye);
+  z-index: 1;
+}
+
+.dropdownRegion:hover .dropdownContent {
+  display: block;
+}
+
+.dropdownContent li:hover{
+  background-color: var(--indigo-dye-2);
+}

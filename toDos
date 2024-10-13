@@ -1,0 +1,44 @@
+Styling:
+
+    - Content und Setting sollen bildschirm ausfüllen -> vh
+    - Einstellungs Optionen sollen besser aussehen, wie "Quiz Buttons" Checkboxes nur im Hintergrund
+
+    - Content Board soll Kacheln haben in denen der Text und Button gleich ausgerichtet sind:
+        - grid format je Kachel 4 Boxen in einer Reihe
+        - Flaggen Biklder in 2 2 Format
+        - Box 1 INPUT 2 INFO 3 CHECKBTN 4 RICHTIGKEIT
+
+    - Anzeige Punktzahl
+
+    - How to?? bei Settings -> soll Feld öffnen, das Punktzahl erklärt
+
+    - Ein Button der alles auf einmal checkt und neu lädt
+
+
+
+Functionality:
+
+- Radio Buttons: umschalten der Punktestände
+- radio Buttons statt Checkboxes bei Flaggen
+- radio Buttons oben auf der Seite
+    - soll umschalten welche Abfrage gemacht wird:
+        - nur erste muss umgeschaltet werden bei Capital / Country
+- Dropdown menü für Regionen:
+    - stellt entweder datensatz um, oder stellt schleife ein, die filtert
+
+
+- EinstellungsButton independent Countries:
+    - stellt Datensatz um
+
+
+Datensatz für Independent Countries erstellen
+
+Animation für richtige Antwort-> CSS
+
+Antworten normalisieren und ohne Sonderzeichen
+
+Bei mehreren richtigen antworten/ richtige Antwort mit allen vergleichen
+
+
+
+
