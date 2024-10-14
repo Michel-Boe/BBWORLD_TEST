@@ -272,7 +272,7 @@ input:hover , button:hover{
   }
 
   .byCountry > div > :first-child{
-    width: 50%;
+    width: 40%;
   }
 
  .info{
@@ -280,7 +280,7 @@ input:hover , button:hover{
  }
 
  #isLandlockedLabel{
-  width: 50% !important;
+  width: 40% !important;
  }
 
  .byCountry > div > button{
