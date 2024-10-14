@@ -42,6 +42,8 @@ function initializeByCountry(){
     });
     document.getElementById("capitalGuess").value = "";
     document.getElementById("borderGuess").value = ""
+    document.getElementById("capitalGuess").placeholder = "Type in Capital";
+
     // noch Eingaben für Land und Landlocked zurücksetzen
 }
 
@@ -146,12 +148,16 @@ function checkIfCapitalCorrect(){
     if (capitalGuess.toLowerCase() == currentCapital.toLowerCase()) {
         results[0].innerHTML = "correct";
         playCorrectSound();
+        
         // counter ++;
         // document.getElementById("inARow").innerHTML = counter;
     }
     else{
-        results[0].innerHTML = `Wrong: The correct answer is: ${currentCapital}`
+        results[0].innerHTML = `incorrect`;
         playWrongSound();
+        document.getElementById("capitalGuess").value = "";
+        document.getElementById("capitalGuess").placeholder = `Right Answer was: ${currentCapital}`;
+        
 
     }
 }
@@ -185,51 +191,6 @@ function checkIfLandlockedCorrect() {
     }
 }
 
-
-
-
-
-
-
-
-
-
-// const firstFlag = document.getElementById('firstFlag');
-// const firstCheck = document.getElementById('firstCheck');
-// const secondFlag = document.getElementById('secondFlag');
-// const secondCheck = document.getElementById('secondCheck');
-// const thirdFlag = document.getElementById('thirdFlag');
-// const thirdCheck = document.getElementById('thirdCheck');
-// const fourthFlag = document.getElementById('fourthFlag');
-// const fourthCheck = document.getElementById('fourthCheck');
-
-// firstFlag.addEventListener('click', function (event) {
-//     event.preventDefault(); // Prevent image form submission
-
-//     // Toggle the checkbox state
-//     firstCheck.checked = !firstCheck.checked;
-// });
-
-// secondFlag.addEventListener('click', function (event) {
-//     event.preventDefault(); // Prevent image form submission
-
-//     // Toggle the checkbox state
-//     secondCheck.checked = !secondCheck.checked;
-// });
-
-// thirdFlag.addEventListener('click', function (event) {
-//     event.preventDefault(); // Prevent image form submission
-
-//     // Toggle the checkbox state
-//     thirdCheck.checked = !thirdCheck.checked;
-// });
-
-// fourthFlag.addEventListener('click', function (event) {
-//     event.preventDefault(); // Prevent image form submission
-
-//     // Toggle the checkbox state
-//     fourthCheck.checked = !fourthCheck.checked;
-// });
 
 document.querySelectorAll('input[name="switch-two"]').forEach((radio) => {
     radio.addEventListener('change', displayRadioValue);

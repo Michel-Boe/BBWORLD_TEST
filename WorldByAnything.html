@@ -11,7 +11,7 @@
 </head>
 <body>
     
-    <div class="header">
+    <div class="main-elements header">
         <div class="username">
             <h1 id="username">Username</h1>
         </div>
@@ -26,7 +26,7 @@
             <input type="checkbox" name="OptionBorderedCountries" id="OptionBorderedCountries">
             
             <div class="dropdownRegion">
-                <button>Play specific Region</button>
+                <button >Play specific Region</button>
                 <ul class="dropdownContent">
                     <li>All <input type="radio" name="dropdownRegion" id=""></li>
                     <li>Europe <input type="radio" name="dropdownRegion" id=""></li>
@@ -56,7 +56,7 @@
 
     </div>
     
-    <div class="content">
+    <div class="main-elements content">
 
         <div class="switch">
             <div class="switch-field">
@@ -73,20 +73,21 @@
 
         <div class="byCountry">
             <div class="showCountry">
-                <p class="info">Random Country:</p>
-                <p id="randomCountry"> </p>
-                <button class="StartQuiz" onclick="initializeByCountry()"> Start Quiz</button>
+                <p class="input" id="randomCountry"> Random Country</p>
+                <p class="info"> Country</p>
+                
+                <button class="Check" onclick="initializeByCountry()"> Start Quiz</button>
             </div>
               
             <div class="askCapital">
-                <input type="text" id="capitalGuess" placeholder="Type in Capital City">
+                <input class="input" type="text" id="capitalGuess" placeholder="Type in Capital">
                 <p class="info"> Capital</p>
-                <button onclick="checkIfCapitalCorrect()"> Check</button>
+                <button class="Check" onclick="checkIfCapitalCorrect()"> Check</button>
                 <p class="showResult"></p>
             </div>
            
             <div class="askFlag">
-                <div class="askFlagContainer">
+                <div class="askFlagContainer input">
                 <label>
                 <input type="radio" name="flags" id="firstFlag" style="display:none">
                 <div class="imageContainer" id="firstFlagImg"><img src="media/placeholder_flag.png" id="firstSrc"></div></label>
@@ -101,37 +102,26 @@
                 <div class="imageContainer" id="fourthFlagImg"><img src="media/placeholder_flag.png" id="fourthSrc"></div></label>
                 </div>
 
-
-                <!-- <input type="checkbox" id="firstCheck" style="display: none;"/>
-                <input id="firstFlag" type="image" src="media/placeholder_flag.png" alt="">
-                
-                <input type="checkbox" id="secondCheck" style="display: none;" />
-                <input id="secondFlag" type="image" src="media/placeholder_flag.png" alt="">
-                
-                <input type="checkbox" id="thirdCheck" style="display: none;" />
-                <input id="thirdFlag" type="image" src="media/placeholder_flag.png" alt="">
-
-                <input type="checkbox" id="fourthCheck" style="display: none;" />
-                <input id="fourthFlag" type="image" src="media/placeholder_flag.png" alt=""> -->
-
                 <p class="info">Pick flag</p>
-                <button onclick="checkIfFlagCorrect()"> Check</button>
+                <button class="Check" onclick="checkIfFlagCorrect()"> Check</button>
                 <p class="showResult"></p>
             </div>
 
             <div class="askLandlocked" id="askLandlocked">
-                <input type="checkbox" name="isLandlocked" id="isLandlocked"style="display: none;">
+                <div class="div-help input">
+                <input type="checkbox" name="isLandlocked" id="isLandlocked" style="display: none;">
                 <label for="isLandlocked" id="isLandlockedLabel">Is the Country Landlocked? Yes/No </label>
-                
+                </div>
+
                 <p class="info">Landlocked</p>
-                <button onclick="checkIfLandlockedCorrect()"> Check </button>
+                <button class="Check" onclick="checkIfLandlockedCorrect()"> Check </button>
                 <p class="showResult"></p>
             </div>
 
             <div class="askBorder" id="askBorder" style="display: none;">
-                <input type="text" id="borderGuess">
-                <p class="info"> Bordered Countries</p>
-                <button> Check </button>
+                <input class="input" type="text" id="borderGuess">
+                <p class="info"> Borders</p>
+                <button class="Check"> Check </button>
                 <p class="showResult"></p>
             </div>   
             
