@@ -13,7 +13,17 @@ function getRandomNumber (maxLength){
 // Variable merkt sich korrekten Index -> Zuordnung der Flagge an Position
 var memory = 0;
 
+let score = 0;
 // 3. Event-Handler
+
+window.addEventListener('load', () => {
+    score = localStorage.getItem('score') ? parseInt(localStorage.getItem('score')) : 0;
+    document.getElementById('counter').innerHTML = score;
+});
+
+window.addEventListener('beforeunload', () => {
+    localStorage.setItem('score', score);
+});
 
 // 4. Hauptlogik
 
@@ -26,7 +36,16 @@ var currentCapital = "";
 var currentBorderArray = "";
 var currentLandlockedStatus = "";
 
+// Score Funktion
+function addPoint() {
+    score += 1;
+    document.getElementById("counter").innerHTML = score;
+}
 
+function subtractPoint(){
+    score -= 1;
+    document.getElementById("counter").innerHTML = score;
+}
 
 
 // Initialisiert Abfrage - neues Land, neue Flaggen, leere Eingaben, leere Ergebnisse
@@ -148,13 +167,14 @@ function checkIfCapitalCorrect(){
     if (capitalGuess.toLowerCase() == currentCapital.toLowerCase()) {
         results[0].innerHTML = "correct";
         playCorrectSound();
-        
+        addPoint();
         // counter ++;
         // document.getElementById("inARow").innerHTML = counter;
     }
     else{
         results[0].innerHTML = `incorrect`;
         playWrongSound();
+        subtractPoint();
         document.getElementById("capitalGuess").value = "";
         document.getElementById("capitalGuess").placeholder = `Right Answer was: ${currentCapital}`;
         
@@ -168,10 +188,12 @@ function checkIfFlagCorrect() {
     if (correctFlag.checked == true){
         results[1].innerHTML = "correct";
         playCorrectSound();
+        addPoint();
     }
     else {
         results[1].innerHTML = "incorrect";
         playWrongSound();
+        subtractPoint();
     }
 }
 
@@ -184,10 +206,12 @@ function checkIfLandlockedCorrect() {
     if (isLandlocked.checked == currentLandlockedStatus){
         results[2].innerHTML = "correct";
         playCorrectSound();
+        addPoint();
     }
     else {
         results[2].innerHTML = "incorrect";
         playWrongSound();
+        subtractPoint();
     }
 }
 

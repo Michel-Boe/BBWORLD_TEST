@@ -106,6 +106,10 @@ body{
   background-color: var(--indigo-dye-2);
 }
 
+#counter{
+  font-size: 30px;
+}
+
 /*  Content Elements */
 .content{
   --content_padding: 5rem;
