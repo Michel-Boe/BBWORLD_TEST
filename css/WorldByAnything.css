@@ -60,9 +60,9 @@ body{
   display: grid;
   gap: 1.5rem;
   grid-template-columns: 1fr 5fr;
-  /* place-content: center; */
+  place-content: center;
   min-height: 100vh;
-  margin: 1rem;
+  margin-inline: 1rem;
 }
 
 
@@ -71,7 +71,7 @@ body{
   /* border: solid; */
 
   background-color: rgba(11,32,55,0.7);
-  height: 650px;
+  height: 95vh;
   border-radius: 1.0rem;
   display: grid;
   grid-template-rows: 1fr 7fr 7fr;
@@ -95,7 +95,7 @@ body{
   --content_gap: 10rem;
 
   background-color: rgba(11,32,55,0.7);
-  height: 650px;
+  height: 95vh;
   border-radius: 1.0rem;
   display: grid;
   grid-template-rows: 1fr 1fr 13fr;
@@ -116,11 +116,24 @@ body{
   align-items: center;
   gap: 2rem;
   flex-wrap: wrap;
-
-
 }
 
-input, button{
+.byCountry > div > :first-child{
+  width: 35%;
+  
+}
+
+.byCountry > div > :nth-child(2){
+  width: 15%;
+}
+
+.byCountry > div > :nth-child(3){
+  width: 20%;
+}
+
+
+
+input, button, #isLandlockedLabel{
   box-shadow: none;
   border: none;
   padding: 0.5rem;
@@ -134,10 +147,6 @@ input:hover , button:hover{
   background-color: var(--indigo-dye-2);
 }
 
-
-.askFlag > input{
-  height: 4rem;
-}
 
 /* switch Field Styling */
 .switch-field {
@@ -183,7 +192,45 @@ input:hover , button:hover{
 }
 
 
-#firstCheck:checked + #firstFlag {
+
+.askFlagContainer{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+.imageContainer{
+  background-color: var(--indigo-dye-2);
+  border-radius: 1rem;
+  height: 4rem;
+  width: 6rem;
+}
+
+.imageContainer>*{
+  border-radius: 1rem;
+  padding: 0.4rem;
+  height: 4rem;
+  width: 6rem;
+  object-fit: cover;
+}
+
+#firstFlag:checked + #firstFlagImg{
+  background-color: var(--satin-sheen-gold);
+}
+
+#secondFlag:checked + #secondFlagImg{
+  background-color: var(--satin-sheen-gold);
+}
+
+#thirdFlag:checked + #thirdFlagImg{
+  background-color: var(--satin-sheen-gold);
+}
+
+#fourthFlag:checked + #fourthFlagImg{
+  background-color: var(--satin-sheen-gold);
+}
+
+/* #firstCheck:checked + #firstFlag {
   background-color: var(--satin-sheen-gold);
 }
 
@@ -197,18 +244,48 @@ input:hover , button:hover{
 
 #fourthCheck:checked + #fourthFlag {
   background-color: var(--satin-sheen-gold);
-}
+} */
 
 
 @media (max-width: 900px){
   body{
     grid-template-columns: 1fr;
+    margin: 1rem;
   }
 
   .content{
     grid-row: 1;
     overflow: scroll;
   }
+
+  .askFlagContainer{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  #randomCountry{
+    width: 50%;
+    text-align: center;
+    font-size: larger;
+  }
+
+  .byCountry > div > :first-child{
+    width: 50%;
+  }
+
+ .info{
+  display:none;
+ }
+
+ #isLandlockedLabel{
+  width: 50% !important;
+ }
+
+ .byCountry > div > button{
+  width:40% !important;
+ }
 
 }
 
@@ -231,4 +308,18 @@ input:hover , button:hover{
 
 .dropdownContent li:hover{
   background-color: var(--indigo-dye-2);
+}
+
+#isLandlockedLabel{
+  width: 35%;
+}
+
+#isLandlocked:checked + #isLandlockedLabel{
+  background-color: var(--satin-sheen-gold);
+  color: var(--indigo-dye);
+
+}
+
+.showCountry> p:first-child{
+  text-align: center;
 }

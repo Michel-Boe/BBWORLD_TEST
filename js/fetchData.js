@@ -69,7 +69,7 @@ async function getSolutionArray() {
 
 //setzt auf die 4 Positionen erst die korrekte Flagge und dann die drei zufälligen
 function setupFlags() {
-    var flagIdArray = ["firstFlag","secondFlag","thirdFlag","fourthFlag"];
+    var flagIdArray = ["firstSrc","secondSrc","thirdSrc","fourthSrc"];
     var correctFlagIndex = getRandomNumber(3);
     memory = correctFlagIndex;
     
@@ -145,22 +145,27 @@ function checkIfCapitalCorrect(){
     const capitalGuess = document.getElementById("capitalGuess").value;
     if (capitalGuess.toLowerCase() == currentCapital.toLowerCase()) {
         results[0].innerHTML = "correct";
+        playCorrectSound();
         // counter ++;
         // document.getElementById("inARow").innerHTML = counter;
     }
     else{
         results[0].innerHTML = `Wrong: The correct answer is: ${currentCapital}`
+        playWrongSound();
+
     }
 }
 
 function checkIfFlagCorrect() {
-    var flagIdArrayHelp = ["firstCheck","secondCheck","thirdCheck","fourthCheck"];
+    var flagIdArrayHelp = ["firstFlag","secondFlag","thirdFlag","fourthFlag"];
     var correctFlag = document.getElementById(flagIdArrayHelp[memory]);
     if (correctFlag.checked == true){
         results[1].innerHTML = "correct";
+        playCorrectSound();
     }
     else {
         results[1].innerHTML = "incorrect";
+        playWrongSound();
     }
 }
 
@@ -172,9 +177,11 @@ function checkIfLandlockedCorrect() {
     const isLandlocked = document.getElementById("isLandlocked");
     if (isLandlocked.checked == currentLandlockedStatus){
         results[2].innerHTML = "correct";
+        playCorrectSound();
     }
     else {
         results[2].innerHTML = "incorrect";
+        playWrongSound();
     }
 }
 
@@ -187,42 +194,42 @@ function checkIfLandlockedCorrect() {
 
 
 
-const firstFlag = document.getElementById('firstFlag');
-const firstCheck = document.getElementById('firstCheck');
-const secondFlag = document.getElementById('secondFlag');
-const secondCheck = document.getElementById('secondCheck');
-const thirdFlag = document.getElementById('thirdFlag');
-const thirdCheck = document.getElementById('thirdCheck');
-const fourthFlag = document.getElementById('fourthFlag');
-const fourthCheck = document.getElementById('fourthCheck');
+// const firstFlag = document.getElementById('firstFlag');
+// const firstCheck = document.getElementById('firstCheck');
+// const secondFlag = document.getElementById('secondFlag');
+// const secondCheck = document.getElementById('secondCheck');
+// const thirdFlag = document.getElementById('thirdFlag');
+// const thirdCheck = document.getElementById('thirdCheck');
+// const fourthFlag = document.getElementById('fourthFlag');
+// const fourthCheck = document.getElementById('fourthCheck');
 
-firstFlag.addEventListener('click', function (event) {
-    event.preventDefault(); // Prevent image form submission
+// firstFlag.addEventListener('click', function (event) {
+//     event.preventDefault(); // Prevent image form submission
 
-    // Toggle the checkbox state
-    firstCheck.checked = !firstCheck.checked;
-});
+//     // Toggle the checkbox state
+//     firstCheck.checked = !firstCheck.checked;
+// });
 
-secondFlag.addEventListener('click', function (event) {
-    event.preventDefault(); // Prevent image form submission
+// secondFlag.addEventListener('click', function (event) {
+//     event.preventDefault(); // Prevent image form submission
 
-    // Toggle the checkbox state
-    secondCheck.checked = !secondCheck.checked;
-});
+//     // Toggle the checkbox state
+//     secondCheck.checked = !secondCheck.checked;
+// });
 
-thirdFlag.addEventListener('click', function (event) {
-    event.preventDefault(); // Prevent image form submission
+// thirdFlag.addEventListener('click', function (event) {
+//     event.preventDefault(); // Prevent image form submission
 
-    // Toggle the checkbox state
-    thirdCheck.checked = !thirdCheck.checked;
-});
+//     // Toggle the checkbox state
+//     thirdCheck.checked = !thirdCheck.checked;
+// });
 
-fourthFlag.addEventListener('click', function (event) {
-    event.preventDefault(); // Prevent image form submission
+// fourthFlag.addEventListener('click', function (event) {
+//     event.preventDefault(); // Prevent image form submission
 
-    // Toggle the checkbox state
-    fourthCheck.checked = !fourthCheck.checked;
-});
+//     // Toggle the checkbox state
+//     fourthCheck.checked = !fourthCheck.checked;
+// });
 
 document.querySelectorAll('input[name="switch-two"]').forEach((radio) => {
     radio.addEventListener('change', displayRadioValue);
@@ -264,3 +271,16 @@ OptionLandlocked.addEventListener('change', function() {
 });
 
 
+
+
+// Audio
+
+function playCorrectSound() {
+    var audioCorrect = document.getElementById("audioCorrect");
+    audioCorrect.play();
+}
+
+function playWrongSound() {
+    var audioCorrect = document.getElementById("audioWrong");
+    audioCorrect.play();
+}

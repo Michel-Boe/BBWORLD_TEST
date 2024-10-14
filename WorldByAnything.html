@@ -73,20 +73,36 @@
 
         <div class="byCountry">
             <div class="showCountry">
-                <p>Random Country:</p>
+                <p class="info">Random Country:</p>
                 <p id="randomCountry"> </p>
                 <button class="StartQuiz" onclick="initializeByCountry()"> Start Quiz</button>
             </div>
               
             <div class="askCapital">
                 <input type="text" id="capitalGuess" placeholder="Type in Capital City">
-                <p> Capital</p>
+                <p class="info"> Capital</p>
                 <button onclick="checkIfCapitalCorrect()"> Check</button>
                 <p class="showResult"></p>
             </div>
            
             <div class="askFlag">
-                <input type="checkbox" id="firstCheck" style="display: none;"/>
+                <div class="askFlagContainer">
+                <label>
+                <input type="radio" name="flags" id="firstFlag" style="display:none">
+                <div class="imageContainer" id="firstFlagImg"><img src="media/placeholder_flag.png" id="firstSrc"></div></label>
+                <label>
+                <input type="radio" name="flags" id="secondFlag" style="display:none">
+                <div class="imageContainer" id="secondFlagImg"><img src="media/placeholder_flag.png" id="secondSrc"></div></label>
+                <label>
+                <input type="radio" name="flags" id="thirdFlag" style="display:none">
+                <div class="imageContainer" id="thirdFlagImg"><img src="media/placeholder_flag.png" id="thirdSrc"></div></label>
+                <label>
+                <input type="radio" name="flags" id="fourthFlag" style="display:none">
+                <div class="imageContainer" id="fourthFlagImg"><img src="media/placeholder_flag.png" id="fourthSrc"></div></label>
+                </div>
+
+
+                <!-- <input type="checkbox" id="firstCheck" style="display: none;"/>
                 <input id="firstFlag" type="image" src="media/placeholder_flag.png" alt="">
                 
                 <input type="checkbox" id="secondCheck" style="display: none;" />
@@ -96,25 +112,26 @@
                 <input id="thirdFlag" type="image" src="media/placeholder_flag.png" alt="">
 
                 <input type="checkbox" id="fourthCheck" style="display: none;" />
-                <input id="fourthFlag" type="image" src="media/placeholder_flag.png" alt="">
+                <input id="fourthFlag" type="image" src="media/placeholder_flag.png" alt=""> -->
 
-                <p>Pick correct flag</p>
+                <p class="info">Pick flag</p>
                 <button onclick="checkIfFlagCorrect()"> Check</button>
                 <p class="showResult"></p>
             </div>
 
             <div class="askLandlocked" id="askLandlocked">
-                <p> Is the Country Landlocked? </p>
-                <label for="isLandlocked"> Yes/No </label>
-                <input type="checkbox" name="isLandlocked" id="isLandlocked">
+                <input type="checkbox" name="isLandlocked" id="isLandlocked"style="display: none;">
+                <label for="isLandlocked" id="isLandlockedLabel">Is the Country Landlocked? Yes/No </label>
+                
+                <p class="info">Landlocked</p>
                 <button onclick="checkIfLandlockedCorrect()"> Check </button>
                 <p class="showResult"></p>
             </div>
 
             <div class="askBorder" id="askBorder" style="display: none;">
                 <input type="text" id="borderGuess">
-                <p> Bordered Countries</p>
-                <button > Check </button>
+                <p class="info"> Bordered Countries</p>
+                <button> Check </button>
                 <p class="showResult"></p>
             </div>   
             
@@ -129,6 +146,9 @@
 
     <script src="js/cookieHandler.js"></script>
     <script src="js/fetchData.js"></script>
+
+    <audio src="media/Correct.mp3" preload="auto" id="audioCorrect"></audio>
+    <audio src="media/Wrong.mp3" preload="auto" id="audioWrong"></audio>
 
 
 </body>
