@@ -18,24 +18,23 @@
 
         <div class="settings">
             <h1> Settings</h1>
-            <label for="IncludeIndependentCountries"> Independent Countries </label>
             <input type="checkbox" name="IncludeIndependentCountries" id="IncludeIndependentCountries">
-            <label for="OptionLandlocked"> Asking if Landlocked</label>
+            <label class="setting-label" for="IncludeIndependentCountries"> Independent Countries </label>
             <input type="checkbox" name="OptionLandlocked" id="OptionLandlocked" checked>
-            <label for="OptionBorderedCountries"> Asking for Bordered Countries</label>
+            <label class="setting-label" for="OptionLandlocked"> Asking if Landlocked</label>
             <input type="checkbox" name="OptionBorderedCountries" id="OptionBorderedCountries">
-            
+            <label class="setting-label" for="OptionBorderedCountries"> Asking for Borders</label>
+
             <div class="dropdownRegion">
                 <button >Play specific Region</button>
                 <ul class="dropdownContent">
-                    <li>All <input type="radio" name="dropdownRegion" id=""></li>
-                    <li>Europe <input type="radio" name="dropdownRegion" id=""></li>
-                    <li>Americas <input type="radio" name="dropdownRegion" id=""></li>
-                    <li>Africa <input type="radio" name="dropdownRegion" id=""></li>
-                    <li>Asia <input type="radio" name="dropdownRegion" id=""></li>
-                    <li>Oceania <input type="radio" name="dropdownRegion" id=""></li>
+                    <li> <input type="radio" name="dropdownRegion" id="All" value="Data/country.json" checked> <label for="All">All</label></li>
+                    <li> <input type="radio" name="dropdownRegion" id="Europe" value="Data/europe.json"> <label for="Europe">Europe</label></li>
+                    <li> <input type="radio" name="dropdownRegion" id="Americas" value="Data/americas.json"> <label for="Americas">Americas</label></li>
+                    <li> <input type="radio" name="dropdownRegion" id="Africa" value="Data/africa.json"> <label for="Africa">Africa</label></li>
+                    <li> <input type="radio" name="dropdownRegion" id="Asia" value="Data/asia.json"><label for="Asia"> Asia</label> </li>
+                    <li> <input type="radio" name="dropdownRegion" id="Oceania" value="Data/oceania.json"> <label for="Oceania">Oceania</label> </li>
                 </ul>
-                
             </div>
 
         </div>
@@ -69,14 +68,14 @@
             </div>
         </div>
 
-        <h1 id="Headline"> World by Country</h1>
+        <h2 id="Headline"> World by Country <span class="headerCounter" > Points: <div id="counter-two"> </div> </span> </h2>
 
-        <div class="byCountry">
+            <div class="byCountry">
             <div class="showCountry">
                 <p class="input" id="randomCountry"> Random Country</p>
                 <p class="info"> Country</p>
                 
-                <button class="Check" onclick="initializeByCountry()"> Start Quiz</button>
+                <button class="Check" onclick="initializeByCountry()"> Start</button>
             </div>
               
             <div class="askCapital">
@@ -110,7 +109,7 @@
             <div class="askLandlocked" id="askLandlocked">
                 <div class="div-help input">
                 <input type="checkbox" name="isLandlocked" id="isLandlocked" style="display: none;">
-                <label for="isLandlocked" id="isLandlockedLabel">Is the Country Landlocked? Yes/No </label>
+                <label for="isLandlocked" id="isLandlockedLabel">Landlocked? Yes/No </label>
                 </div>
 
                 <p class="info">Landlocked</p>
@@ -119,7 +118,7 @@
             </div>
 
             <div class="askBorder" id="askBorder" style="display: none;">
-                <input class="input" type="text" id="borderGuess">
+                <input class="input" type="text" id="borderGuess" placeholder="currently not available">
                 <p class="info"> Borders</p>
                 <button class="Check"> Check </button>
                 <p class="showResult"></p>

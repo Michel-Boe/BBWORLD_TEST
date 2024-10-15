@@ -84,11 +84,39 @@ body{
   padding: 1rem;
 }
 
+.headerCounter{
+  display: none;
+}
+
 #username{
   background-color: var(--indigo-dye);
   text-align: center;
   border-radius: 0.25rem;
   padding:0.5rem;
+}
+
+.settings{
+  gap: 0.5rem;
+}
+.setting-label,.dropdownRegion>button{
+  width: 100%;
+  height: 100%;
+  background-color: var(--indigo-dye);
+  color: var(--satin-sheen-gold);
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.settings > input:checked + .setting-label{
+  background-color: var(--satin-sheen-gold);
+  color: var(--indigo-dye);
+}
+
+.settings > input {
+  display: none;
 }
 
 .dropdownContent {
@@ -100,14 +128,22 @@ body{
 
 .dropdownRegion:hover .dropdownContent {
   display: block;
+  list-style: none;
+  padding: 0.5rem;
 }
 
 .dropdownContent li:hover{
   background-color: var(--indigo-dye-2);
 }
 
+
+
 #counter{
   font-size: 30px;
+}
+
+#counter-two{
+  display: inline;
 }
 
 /*  Content Elements */
@@ -138,7 +174,7 @@ body{
 }
 
 .input{
-  width: 40%;
+  width: 50%;
 }
 
 .info{
@@ -150,7 +186,7 @@ body{
 }
 
 .showResult{
-  width: 15%
+  width: 5%
 }
 
 
@@ -261,6 +297,7 @@ input:hover , button:hover{
   justify-content: center; /* Zentriert horizontal das Label */
   padding:0;
 }
+
 #isLandlockedLabel{
   width: 100%;
   height: 100%;
@@ -273,8 +310,10 @@ input:hover , button:hover{
 #isLandlocked:checked + #isLandlockedLabel{
   background-color: var(--satin-sheen-gold);
   color: var(--indigo-dye);
-
 }
+
+
+
 
 /* Media Queries */
 @media (max-width: 900px){
@@ -294,18 +333,27 @@ input:hover , button:hover{
     grid-template-columns: 1fr;
   }
 
- .info{
-  display:none;
- }
+  .byCountry{
+    gap: 0rem ;
+  }
+
+  .byCountry > *{
+    gap: 0.5rem ;
+  }
+ 
 
  .input{
-  width:60% !important;
+  width:65% !important;
  }
 
  .Check{
-  width: 25% !important;
+  width: 20% !important;
  }
 
+ .headerCounter{
+  display: block;
+  padding-left: 0px !important;
+}
 
 }
 
@@ -324,10 +372,10 @@ input:hover , button:hover{
 
   .byCountry{
     grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
-
+    margin: 0.5rem;
   }
 
-  .showResult{
+  .info{
     display: none;
     width: 0%;
   }
@@ -336,8 +384,14 @@ input:hover , button:hover{
     width: 30%;
   }
 
-  .info{
-    width: 15%
+  .showResult{
+    width: 5%
+  }
+
+  .headerCounter{
+    display: inline-block;
+    padding-left: 2rem;
   }
 }
+
 

@@ -8,22 +8,95 @@ function getRandomNumber (maxLength){
     return randomNumber;
 }
 
+
+// gibt normalisierten String zurück
+function normalizeString(str) {
+    return str
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/\s+/g, "")
+        .toLowerCase();
+}
+
 // 2. Variablen
 
 // Variable merkt sich korrekten Index -> Zuordnung der Flagge an Position
 var memory = 0;
 
 let score = 0;
+
+let RoundPoints = 0;
+
+let alreadyGuessedCap = false;
+let alreadyGuessedFlag = false;
+let alreadyGuessedLandlocked = false;
+let alreadyGuessedBorders = false;
+
+let fetchAdress = "Data/country.json";
+
 // 3. Event-Handler
 
 window.addEventListener('load', () => {
     score = localStorage.getItem('score') ? parseInt(localStorage.getItem('score')) : 0;
     document.getElementById('counter').innerHTML = score;
+    document.getElementById('counter-two').innerHTML = score;
 });
 
 window.addEventListener('beforeunload', () => {
     localStorage.setItem('score', score);
 });
+
+// document.querySelectorAll('input[name="switch-two"]').forEach((radio) => {
+//     radio.addEventListener('change', displayRadioValue);
+// });
+
+document.querySelectorAll('input[name=dropdownRegion]').forEach((radio) => {
+    radio.addEventListener('change', changeFetchAdress)
+});
+
+document.getElementById("IncludeIndependentCountries").addEventListener('change',() => {
+    if (document.getElementById("IncludeIndependentCountries").checked == true){
+        fetchAdress = "Data/dependentcountries.json";
+    }
+    else{
+        fetchAdress = "Data/country.json";
+    };
+    initializeByCountry();
+})
+
+
+// function displayRadioValue()  {
+//     var ele = document.getElementsByName('switch-two');
+
+//     for (i=0; i < ele.length; i++) {
+//         if (ele[i].checked) {
+//             document.getElementById('Headline').textContent = `World by ${ele[i].value}`;
+//         }
+
+//     }
+// }
+
+function changeFetchAdress(){
+    var dropdownRegion = document.getElementsByName('dropdownRegion');
+
+    for (i=0; i < dropdownRegion.length; i++) {
+        if (dropdownRegion[i].checked) {
+            fetchAdress = dropdownRegion[i].value;
+            if (fetchAdress != "Data/country.json"){
+                document.getElementById("IncludeIndependentCountries").checked = true;
+                document.getElementById("IncludeIndependentCountries").disabled =true;
+
+            } else{
+                document.getElementById("IncludeIndependentCountries").checked=false;
+                document.getElementById("IncludeIndependentCountries").disabled =false;
+
+            }
+        }
+    };
+    initializeByCountry();
+
+}
+
 
 // 4. Hauptlogik
 
@@ -37,15 +110,18 @@ var currentBorderArray = "";
 var currentLandlockedStatus = "";
 
 // Score Funktion
-function addPoint() {
-    score += 1;
+function addPoints() {
+    score += RoundPoints;
     document.getElementById("counter").innerHTML = score;
+    document.getElementById('counter-two').innerHTML = score;
+    RoundPoints = 0;
 }
 
-function subtractPoint(){
-    score -= 1;
-    document.getElementById("counter").innerHTML = score;
-}
+// function subtractPoint(){
+//     score -= 1;
+//     document.getElementById("counter").innerHTML = score;
+//     document.getElementById('counter-two').innerHTML = score;
+// }
 
 
 // Initialisiert Abfrage - neues Land, neue Flaggen, leere Eingaben, leere Ergebnisse
@@ -59,9 +135,19 @@ function initializeByCountry(){
     results.forEach(function(result) {
         result.innerHTML= "";
     });
+    addPoints();
     document.getElementById("capitalGuess").value = "";
     document.getElementById("borderGuess").value = ""
     document.getElementById("capitalGuess").placeholder = "Type in Capital";
+    document.getElementById("isLandlocked").checked = false;
+    document.getElementById("firstFlag").checked = false;
+    document.getElementById("secondFlag").checked = false;
+    document.getElementById("thirdFlag").checked = false;
+    document.getElementById("fourthFlag").checked = false;
+    alreadyGuessedCap = false;
+    alreadyGuessedFlag = false;
+    alreadyGuessedLandlocked = false;
+    alreadyGuessedBorders = false;
 
     // noch Eingaben für Land und Landlocked zurücksetzen
 }
@@ -71,7 +157,7 @@ function initializeByCountry(){
 async function getSolutionArray() {  
     try {
       // Daten von der JSON-Datei abrufen
-      const response = await fetch("Data/country.json");
+      const response = await fetch(fetchAdress);
       const data = await response.json();
   
       // Zufallszahl generieren und Land auswählen
@@ -116,7 +202,7 @@ async function getRandomFlag(id){
     var flagURL = document.getElementById(id);
     try {
         // Daten von der JSON-Datei abrufen
-        const response = await fetch("Data/country.json");
+        const response = await fetch(fetchAdress);
         const data = await response.json();
     
         // Zufallszahl generieren und Land auswählen
@@ -133,7 +219,7 @@ async function getRandomFlag(id){
 async function getAnythingWithCountry(country, type){
     var specificAnswer;
 
-    let response = fetch("Data/country.json");
+    let response = fetch(fetchAdress);
     let data = await (await response).json();
 
     for (let i = 0; i <= data.length; i++){
@@ -162,38 +248,41 @@ async function getAnythingWithCountry(country, type){
 
 // Vergleicht Eingabe mit korrektem Wert und setzt das Ergebnis korrekt/inkorrekt
 function checkIfCapitalCorrect(){
-    // var counter = document.getElementById("inARow").innerText;
-    const capitalGuess = document.getElementById("capitalGuess").value;
-    if (capitalGuess.toLowerCase() == currentCapital.toLowerCase()) {
-        results[0].innerHTML = "correct";
-        playCorrectSound();
-        addPoint();
-        // counter ++;
-        // document.getElementById("inARow").innerHTML = counter;
-    }
-    else{
-        results[0].innerHTML = `incorrect`;
-        playWrongSound();
-        subtractPoint();
-        document.getElementById("capitalGuess").value = "";
-        document.getElementById("capitalGuess").placeholder = `Right Answer was: ${currentCapital}`;
-        
-
+    if (alreadyGuessedCap == false){
+        const capitalGuess = document.getElementById("capitalGuess").value;
+        if (normalizeString(capitalGuess) == normalizeString(currentCapital)) {
+            results[0].innerHTML = "+1";
+            playCorrectSound();
+            RoundPoints += 1;
+            alreadyGuessedCap = true;
+        }
+        else{
+            results[0].innerHTML = `-1`;
+            playWrongSound();
+            RoundPoints -= 1;
+            document.getElementById("capitalGuess").value = "";
+            document.getElementById("capitalGuess").placeholder = `"${currentCapital}" was correct`;
+            alreadyGuessedCap = true;
+        }
     }
 }
 
 function checkIfFlagCorrect() {
-    var flagIdArrayHelp = ["firstFlag","secondFlag","thirdFlag","fourthFlag"];
-    var correctFlag = document.getElementById(flagIdArrayHelp[memory]);
-    if (correctFlag.checked == true){
-        results[1].innerHTML = "correct";
-        playCorrectSound();
-        addPoint();
-    }
-    else {
-        results[1].innerHTML = "incorrect";
-        playWrongSound();
-        subtractPoint();
+    if (alreadyGuessedFlag == false){   
+        var flagIdArrayHelp = ["firstFlag","secondFlag","thirdFlag","fourthFlag"];
+        var correctFlag = document.getElementById(flagIdArrayHelp[memory]);
+        if (correctFlag.checked == true){
+            results[1].innerHTML = "+1";
+            playCorrectSound();
+            RoundPoints += 1;
+            alreadyGuessedFlag = true;
+        }
+        else {
+            results[1].innerHTML = "-1";
+            playWrongSound();
+            RoundPoints -= 1;
+            alreadyGuessedFlag = true;
+        }
     }
 }
 
@@ -202,34 +291,26 @@ function checkIfBordersCorrect(){
 }
 
 function checkIfLandlockedCorrect() {
-    const isLandlocked = document.getElementById("isLandlocked");
-    if (isLandlocked.checked == currentLandlockedStatus){
-        results[2].innerHTML = "correct";
-        playCorrectSound();
-        addPoint();
-    }
-    else {
-        results[2].innerHTML = "incorrect";
-        playWrongSound();
-        subtractPoint();
-    }
-}
-
-
-document.querySelectorAll('input[name="switch-two"]').forEach((radio) => {
-    radio.addEventListener('change', displayRadioValue);
-  });
-
-function displayRadioValue()  {
-    var ele = document.getElementsByName('switch-two');
-
-    for (i=0; i < ele.length; i++) {
-        if (ele[i].checked) {
-            document.getElementById('Headline').innerHTML = `World by ${ele[i].value}`;
+    if (alreadyGuessedLandlocked == false){
+        const isLandlocked = document.getElementById("isLandlocked");
+        if (isLandlocked.checked == currentLandlockedStatus){
+            results[2].innerHTML = "+1";
+            playCorrectSound();
+            RoundPoints += 1;
+            alreadyGuessedLandlocked = true;
         }
-
+        else {
+            results[2].innerHTML = "-1";
+            playWrongSound();
+            RoundPoints -= 1;
+            alreadyGuessedLandlocked = true;
+        }
     }
 }
+
+
+
+
 
 const OptionBorderedCountries = document.getElementById('OptionBorderedCountries');
 const askBorder = document.getElementById('askBorder');

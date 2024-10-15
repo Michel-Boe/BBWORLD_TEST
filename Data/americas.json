@@ -1,0 +1,1415 @@
+[
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/co.png",
+            "svg": "https://flagcdn.com/co.svg",
+            "alt": "The flag of Colombia is composed of three horizontal bands of yellow, blue and red, with the yellow band twice the height of the other two bands."
+        },
+        "name": {
+            "common": "Colombia",
+            "official": "Republic of Colombia",
+            "nativeName": {
+                "spa": {
+                    "official": "República de Colombia",
+                    "common": "Colombia"
+                }
+            }
+        },
+        "capital": [
+            "Bogotá"
+        ],
+        "landlocked": false,
+        "borders": [
+            "BRA",
+            "ECU",
+            "PAN",
+            "PER",
+            "VEN"
+        ]
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/cw.png",
+            "svg": "https://flagcdn.com/cw.svg",
+            "alt": ""
+        },
+        "name": {
+            "common": "Curaçao",
+            "official": "Country of Curaçao",
+            "nativeName": {
+                "eng": {
+                    "official": "Country of Curaçao",
+                    "common": "Curaçao"
+                },
+                "nld": {
+                    "official": "Land Curaçao",
+                    "common": "Curaçao"
+                },
+                "pap": {
+                    "official": "Pais Kòrsou",
+                    "common": "Pais Kòrsou"
+                }
+            }
+        },
+        "capital": [
+            "Willemstad"
+        ],
+        "landlocked": false,
+        "borders": []
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/gf.png",
+            "svg": "https://flagcdn.com/gf.svg",
+            "alt": ""
+        },
+        "name": {
+            "common": "French Guiana",
+            "official": "Guiana",
+            "nativeName": {
+                "fra": {
+                    "official": "Guyane",
+                    "common": "Guyane française"
+                }
+            }
+        },
+        "capital": [
+            "Cayenne"
+        ],
+        "landlocked": false,
+        "borders": [
+            "BRA",
+            "SUR"
+        ]
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/gd.png",
+            "svg": "https://flagcdn.com/gd.svg",
+            "alt": "The flag of Grenada features a large central rectangular area surrounded by a red border, with three five-pointed yellow stars centered on the top and bottom borders. The central rectangle is divided diagonally into four alternating triangular areas of yellow at the top and bottom and green on the hoist and fly sides, and a five-pointed yellow star on a red circle is superimposed at its center. A symbolic nutmeg pod is situated on the green hoist-side triangle."
+        },
+        "name": {
+            "common": "Grenada",
+            "official": "Grenada",
+            "nativeName": {
+                "eng": {
+                    "official": "Grenada",
+                    "common": "Grenada"
+                }
+            }
+        },
+        "capital": [
+            "St. George's"
+        ],
+        "landlocked": false,
+        "borders": []
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/sx.png",
+            "svg": "https://flagcdn.com/sx.svg",
+            "alt": ""
+        },
+        "name": {
+            "common": "Sint Maarten",
+            "official": "Sint Maarten",
+            "nativeName": {
+                "eng": {
+                    "official": "Sint Maarten",
+                    "common": "Sint Maarten"
+                },
+                "fra": {
+                    "official": "Saint-Martin",
+                    "common": "Saint-Martin"
+                },
+                "nld": {
+                    "official": "Sint Maarten",
+                    "common": "Sint Maarten"
+                }
+            }
+        },
+        "capital": [
+            "Philipsburg"
+        ],
+        "landlocked": false,
+        "borders": [
+            "MAF"
+        ]
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/ar.png",
+            "svg": "https://flagcdn.com/ar.svg",
+            "alt": "The flag of Argentina features three equal horizontal bands of light blue, white and light blue. A brown-edged golden sun is centered in the white band."
+        },
+        "name": {
+            "common": "Argentina",
+            "official": "Argentine Republic",
+            "nativeName": {
+                "grn": {
+                    "official": "Argentine Republic",
+                    "common": "Argentina"
+                },
+                "spa": {
+                    "official": "República Argentina",
+                    "common": "Argentina"
+                }
+            }
+        },
+        "capital": [
+            "Buenos Aires"
+        ],
+        "landlocked": false,
+        "borders": [
+            "BOL",
+            "BRA",
+            "CHL",
+            "PRY",
+            "URY"
+        ]
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/tc.png",
+            "svg": "https://flagcdn.com/tc.svg",
+            "alt": ""
+        },
+        "name": {
+            "common": "Turks and Caicos Islands",
+            "official": "Turks and Caicos Islands",
+            "nativeName": {
+                "eng": {
+                    "official": "Turks and Caicos Islands",
+                    "common": "Turks and Caicos Islands"
+                }
+            }
+        },
+        "capital": [
+            "Cockburn Town"
+        ],
+        "landlocked": false,
+        "borders": []
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/dm.png",
+            "svg": "https://flagcdn.com/dm.svg",
+            "alt": "The flag of Dominica has a green field with a large centered tricolor cross. The vertical and horizontal parts of the cross each comprise three bands of yellow, black and white. A red circle, bearing a hoist-side facing purple Sisserou parrot standing on a twig and encircled by ten five-pointed yellow-edged green stars, is superimposed at the center of the cross."
+        },
+        "name": {
+            "common": "Dominica",
+            "official": "Commonwealth of Dominica",
+            "nativeName": {
+                "eng": {
+                    "official": "Commonwealth of Dominica",
+                    "common": "Dominica"
+                }
+            }
+        },
+        "capital": [
+            "Roseau"
+        ],
+        "landlocked": false,
+        "borders": []
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/um.png",
+            "svg": "https://flagcdn.com/um.svg",
+            "alt": ""
+        },
+        "name": {
+            "common": "United States Minor Outlying Islands",
+            "official": "United States Minor Outlying Islands",
+            "nativeName": {
+                "eng": {
+                    "official": "United States Minor Outlying Islands",
+                    "common": "United States Minor Outlying Islands"
+                }
+            }
+        },
+        "capital": [
+            "Washington DC"
+        ],
+        "landlocked": false,
+        "borders": []
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/cr.png",
+            "svg": "https://flagcdn.com/cr.svg",
+            "alt": "The flag of Costa Rica is composed of five horizontal bands of blue, white, red, white and blue. The central red band is twice the height of the other four bands."
+        },
+        "name": {
+            "common": "Costa Rica",
+            "official": "Republic of Costa Rica",
+            "nativeName": {
+                "spa": {
+                    "official": "República de Costa Rica",
+                    "common": "Costa Rica"
+                }
+            }
+        },
+        "capital": [
+            "San José"
+        ],
+        "landlocked": false,
+        "borders": [
+            "NIC",
+            "PAN"
+        ]
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/ht.png",
+            "svg": "https://flagcdn.com/ht.svg",
+            "alt": "The flag of Haiti is composed of two equal horizontal bands of blue and red. A white square bearing the national coat of arms is superimposed at the center of the field."
+        },
+        "name": {
+            "common": "Haiti",
+            "official": "Republic of Haiti",
+            "nativeName": {
+                "fra": {
+                    "official": "République d'Haïti",
+                    "common": "Haïti"
+                },
+                "hat": {
+                    "official": "Repiblik Ayiti",
+                    "common": "Ayiti"
+                }
+            }
+        },
+        "capital": [
+            "Port-au-Prince"
+        ],
+        "landlocked": false,
+        "borders": [
+            "DOM"
+        ]
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/bb.png",
+            "svg": "https://flagcdn.com/bb.svg",
+            "alt": "The flag of Barbados is composed of three equal vertical bands of ultramarine, gold and ultramarine. The head of a black trident is centered in the gold band."
+        },
+        "name": {
+            "common": "Barbados",
+            "official": "Barbados",
+            "nativeName": {
+                "eng": {
+                    "official": "Barbados",
+                    "common": "Barbados"
+                }
+            }
+        },
+        "capital": [
+            "Bridgetown"
+        ],
+        "landlocked": false,
+        "borders": []
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/hn.png",
+            "svg": "https://flagcdn.com/hn.svg",
+            "alt": "The flag of Honduras is composed of three equal horizontal bands of turquoise, white and turquoise, with five small five-pointed turquoise stars arranged in a quincuncial pattern at the center of the white band."
+        },
+        "name": {
+            "common": "Honduras",
+            "official": "Republic of Honduras",
+            "nativeName": {
+                "spa": {
+                    "official": "República de Honduras",
+                    "common": "Honduras"
+                }
+            }
+        },
+        "capital": [
+            "Tegucigalpa"
+        ],
+        "landlocked": false,
+        "borders": [
+            "GTM",
+            "SLV",
+            "NIC"
+        ]
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/pr.png",
+            "svg": "https://flagcdn.com/pr.svg",
+            "alt": ""
+        },
+        "name": {
+            "common": "Puerto Rico",
+            "official": "Commonwealth of Puerto Rico",
+            "nativeName": {
+                "eng": {
+                    "official": "Commonwealth of Puerto Rico",
+                    "common": "Puerto Rico"
+                },
+                "spa": {
+                    "official": "Estado Libre Asociado de Puerto Rico",
+                    "common": "Puerto Rico"
+                }
+            }
+        },
+        "capital": [
+            "San Juan"
+        ],
+        "landlocked": false,
+        "borders": []
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/fk.png",
+            "svg": "https://flagcdn.com/fk.svg",
+            "alt": ""
+        },
+        "name": {
+            "common": "Falkland Islands",
+            "official": "Falkland Islands",
+            "nativeName": {
+                "eng": {
+                    "official": "Falkland Islands",
+                    "common": "Falkland Islands"
+                }
+            }
+        },
+        "capital": [
+            "Stanley"
+        ],
+        "landlocked": false,
+        "borders": []
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/kn.png",
+            "svg": "https://flagcdn.com/kn.svg",
+            "alt": "The flag of Saint Kitts and Nevis features two large five-pointed white stars within a yellow-edged black diagonal band that extends from the lower hoist-side corner to the upper fly-side corner of the field. Above and beneath this band are a green and red triangle respectively."
+        },
+        "name": {
+            "common": "Saint Kitts and Nevis",
+            "official": "Federation of Saint Christopher and Nevis",
+            "nativeName": {
+                "eng": {
+                    "official": "Federation of Saint Christopher and Nevis",
+                    "common": "Saint Kitts and Nevis"
+                }
+            }
+        },
+        "capital": [
+            "Basseterre"
+        ],
+        "landlocked": false,
+        "borders": []
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/lc.png",
+            "svg": "https://flagcdn.com/lc.svg",
+            "alt": "The flag of Saint Lucia has a light blue field, at the center of which are two triangles which share a common base — a small golden-yellow isosceles triangle superimposed on a large white-edged black isosceles triangle."
+        },
+        "name": {
+            "common": "Saint Lucia",
+            "official": "Saint Lucia",
+            "nativeName": {
+                "eng": {
+                    "official": "Saint Lucia",
+                    "common": "Saint Lucia"
+                }
+            }
+        },
+        "capital": [
+            "Castries"
+        ],
+        "landlocked": false,
+        "borders": []
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/bq.png",
+            "svg": "https://flagcdn.com/bq.svg",
+            "alt": ""
+        },
+        "name": {
+            "common": "Caribbean Netherlands",
+            "official": "Bonaire, Sint Eustatius and Saba",
+            "nativeName": {
+                "nld": {
+                    "official": "Bonaire, Sint Eustatius en Saba",
+                    "common": "Caribisch Nederland"
+                },
+                "pap": {
+                    "official": "Boneiru, Sint Eustatius y Saba",
+                    "common": "Boneiru, Sint Eustatius y Saba"
+                }
+            }
+        },
+        "capital": [
+            "Kralendijk"
+        ],
+        "landlocked": false,
+        "borders": []
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/bo.png",
+            "svg": "https://flagcdn.com/bo.svg",
+            "alt": "The flag of Bolivia is composed of three equal horizontal bands of red, yellow and green, with the national coat of arms centered in the yellow band."
+        },
+        "name": {
+            "common": "Bolivia",
+            "official": "Plurinational State of Bolivia",
+            "nativeName": {
+                "aym": {
+                    "official": "Wuliwya Suyu",
+                    "common": "Wuliwya"
+                },
+                "grn": {
+                    "official": "Tetã Volívia",
+                    "common": "Volívia"
+                },
+                "que": {
+                    "official": "Buliwya Mamallaqta",
+                    "common": "Buliwya"
+                },
+                "spa": {
+                    "official": "Estado Plurinacional de Bolivia",
+                    "common": "Bolivia"
+                }
+            }
+        },
+        "capital": [
+            "Sucre"
+        ],
+        "landlocked": true,
+        "borders": [
+            "ARG",
+            "BRA",
+            "CHL",
+            "PRY",
+            "PER"
+        ]
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/cl.png",
+            "svg": "https://flagcdn.com/cl.svg",
+            "alt": "The flag of Chile is composed of two equal horizontal bands of white and red, with a blue square of the same height as the white band superimposed in the canton. A white five-pointed star is centered in the blue square."
+        },
+        "name": {
+            "common": "Chile",
+            "official": "Republic of Chile",
+            "nativeName": {
+                "spa": {
+                    "official": "República de Chile",
+                    "common": "Chile"
+                }
+            }
+        },
+        "capital": [
+            "Santiago"
+        ],
+        "landlocked": false,
+        "borders": [
+            "ARG",
+            "BOL",
+            "PER"
+        ]
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/us.png",
+            "svg": "https://flagcdn.com/us.svg",
+            "alt": "The flag of the United States of America is composed of thirteen equal horizontal bands of red alternating with white. A blue rectangle, bearing fifty small five-pointed white stars arranged in nine rows where rows of six stars alternate with rows of five stars, is superimposed in the canton."
+        },
+        "name": {
+            "common": "United States",
+            "official": "United States of America",
+            "nativeName": {
+                "eng": {
+                    "official": "United States of America",
+                    "common": "United States"
+                }
+            }
+        },
+        "capital": [
+            "Washington, D.C."
+        ],
+        "landlocked": false,
+        "borders": [
+            "CAN",
+            "MEX"
+        ]
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/gp.png",
+            "svg": "https://flagcdn.com/gp.svg",
+            "alt": ""
+        },
+        "name": {
+            "common": "Guadeloupe",
+            "official": "Guadeloupe",
+            "nativeName": {
+                "fra": {
+                    "official": "Guadeloupe",
+                    "common": "Guadeloupe"
+                }
+            }
+        },
+        "capital": [
+            "Basse-Terre"
+        ],
+        "landlocked": false,
+        "borders": []
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/mx.png",
+            "svg": "https://flagcdn.com/mx.svg",
+            "alt": "The flag of Mexico is composed of three equal vertical bands of green, white and red, with the national coat of arms centered in the white band."
+        },
+        "name": {
+            "common": "Mexico",
+            "official": "United Mexican States",
+            "nativeName": {
+                "spa": {
+                    "official": "Estados Unidos Mexicanos",
+                    "common": "México"
+                }
+            }
+        },
+        "capital": [
+            "Mexico City"
+        ],
+        "landlocked": false,
+        "borders": [
+            "BLZ",
+            "GTM",
+            "USA"
+        ]
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/vc.png",
+            "svg": "https://flagcdn.com/vc.svg",
+            "alt": "The flag of Saint Vincent and the Grenadines is composed of three vertical bands of blue, gold and green. The gold band is twice as wide as the other two bands and bears three green diamonds arranged to form the letter V at its center."
+        },
+        "name": {
+            "common": "Saint Vincent and the Grenadines",
+            "official": "Saint Vincent and the Grenadines",
+            "nativeName": {
+                "eng": {
+                    "official": "Saint Vincent and the Grenadines",
+                    "common": "Saint Vincent and the Grenadines"
+                }
+            }
+        },
+        "capital": [
+            "Kingstown"
+        ],
+        "landlocked": false,
+        "borders": []
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/bm.png",
+            "svg": "https://flagcdn.com/bm.svg",
+            "alt": ""
+        },
+        "name": {
+            "common": "Bermuda",
+            "official": "Bermuda",
+            "nativeName": {
+                "eng": {
+                    "official": "Bermuda",
+                    "common": "Bermuda"
+                }
+            }
+        },
+        "capital": [
+            "Hamilton"
+        ],
+        "landlocked": false,
+        "borders": []
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/do.png",
+            "svg": "https://flagcdn.com/do.svg",
+            "alt": "The flag of the Dominican Republic is divided into four rectangles by a centered white cross that extends to the edges of the field and bears the national coat of arms in its center. The upper hoist-side and lower fly-side rectangles are blue and the lower hoist-side and upper fly-side rectangles are red."
+        },
+        "name": {
+            "common": "Dominican Republic",
+            "official": "Dominican Republic",
+            "nativeName": {
+                "spa": {
+                    "official": "República Dominicana",
+                    "common": "República Dominicana"
+                }
+            }
+        },
+        "capital": [
+            "Santo Domingo"
+        ],
+        "landlocked": false,
+        "borders": [
+            "HTI"
+        ]
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/gt.png",
+            "svg": "https://flagcdn.com/gt.svg",
+            "alt": "The flag of Guatemala is composed of three equal vertical bands of light blue, white and light blue, with the national coat of arms centered in the white band."
+        },
+        "name": {
+            "common": "Guatemala",
+            "official": "Republic of Guatemala",
+            "nativeName": {
+                "spa": {
+                    "official": "República de Guatemala",
+                    "common": "Guatemala"
+                }
+            }
+        },
+        "capital": [
+            "Guatemala City"
+        ],
+        "landlocked": false,
+        "borders": [
+            "BLZ",
+            "SLV",
+            "HND",
+            "MEX"
+        ]
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/ec.png",
+            "svg": "https://flagcdn.com/ec.svg",
+            "alt": "The flag of Ecuador is composed of the horizontal bands of yellow, blue and red, with the yellow band twice the height of the other two bands. The Ecuadorian coat of arms is superimposed in the center of the field."
+        },
+        "name": {
+            "common": "Ecuador",
+            "official": "Republic of Ecuador",
+            "nativeName": {
+                "spa": {
+                    "official": "República del Ecuador",
+                    "common": "Ecuador"
+                }
+            }
+        },
+        "capital": [
+            "Quito"
+        ],
+        "landlocked": false,
+        "borders": [
+            "COL",
+            "PER"
+        ]
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/mq.png",
+            "svg": "https://flagcdn.com/mq.svg",
+            "alt": ""
+        },
+        "name": {
+            "common": "Martinique",
+            "official": "Martinique",
+            "nativeName": {
+                "fra": {
+                    "official": "Martinique",
+                    "common": "Martinique"
+                }
+            }
+        },
+        "capital": [
+            "Fort-de-France"
+        ],
+        "landlocked": false,
+        "borders": []
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/sr.png",
+            "svg": "https://flagcdn.com/sr.svg",
+            "alt": "The flag of Suriname is composed of five horizontal bands of green, white, red, white and green in the ratio of 2:1:4:1:2. A large five-pointed yellow star is centered in the red band."
+        },
+        "name": {
+            "common": "Suriname",
+            "official": "Republic of Suriname",
+            "nativeName": {
+                "nld": {
+                    "official": "Republiek Suriname",
+                    "common": "Suriname"
+                }
+            }
+        },
+        "capital": [
+            "Paramaribo"
+        ],
+        "landlocked": false,
+        "borders": [
+            "BRA",
+            "GUF",
+            "GUY"
+        ]
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/bl.png",
+            "svg": "https://flagcdn.com/bl.svg",
+            "alt": ""
+        },
+        "name": {
+            "common": "Saint Barthélemy",
+            "official": "Collectivity of Saint Barthélemy",
+            "nativeName": {
+                "fra": {
+                    "official": "Collectivité de Saint-Barthélemy",
+                    "common": "Saint-Barthélemy"
+                }
+            }
+        },
+        "capital": [
+            "Gustavia"
+        ],
+        "landlocked": false,
+        "borders": []
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/bs.png",
+            "svg": "https://flagcdn.com/bs.svg",
+            "alt": "The flag of the Bahamas is composed of three equal horizontal bands of aquamarine, yellow and aquamarine, with a black equilateral triangle superimposed on the hoist side of the field. This triangle has its base on the hoist end and spans about one-third the width of the field."
+        },
+        "name": {
+            "common": "Bahamas",
+            "official": "Commonwealth of the Bahamas",
+            "nativeName": {
+                "eng": {
+                    "official": "Commonwealth of the Bahamas",
+                    "common": "Bahamas"
+                }
+            }
+        },
+        "capital": [
+            "Nassau"
+        ],
+        "landlocked": false,
+        "borders": []
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/py.png",
+            "svg": "https://flagcdn.com/py.svg",
+            "alt": "The flag of Paraguay features three equal horizontal bands of red, white and blue, with an emblem centered in the white band. On the obverse side of the flag depicted, this emblem is the national coat of arms."
+        },
+        "name": {
+            "common": "Paraguay",
+            "official": "Republic of Paraguay",
+            "nativeName": {
+                "grn": {
+                    "official": "Tetã Paraguái",
+                    "common": "Paraguái"
+                },
+                "spa": {
+                    "official": "República de Paraguay",
+                    "common": "Paraguay"
+                }
+            }
+        },
+        "capital": [
+            "Asunción"
+        ],
+        "landlocked": true,
+        "borders": [
+            "ARG",
+            "BOL",
+            "BRA"
+        ]
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/vg.png",
+            "svg": "https://flagcdn.com/vg.svg",
+            "alt": ""
+        },
+        "name": {
+            "common": "British Virgin Islands",
+            "official": "Virgin Islands",
+            "nativeName": {
+                "eng": {
+                    "official": "Virgin Islands",
+                    "common": "British Virgin Islands"
+                }
+            }
+        },
+        "capital": [
+            "Road Town"
+        ],
+        "landlocked": false,
+        "borders": []
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/br.png",
+            "svg": "https://flagcdn.com/br.svg",
+            "alt": "The flag of Brazil has a green field with a large yellow rhombus in the center. Within the rhombus is a dark blue globe with twenty-seven small five-pointed white stars depicting a starry sky and a thin white convex horizontal band inscribed with the national motto 'Ordem e Progresso' across its center."
+        },
+        "name": {
+            "common": "Brazil",
+            "official": "Federative Republic of Brazil",
+            "nativeName": {
+                "por": {
+                    "official": "República Federativa do Brasil",
+                    "common": "Brasil"
+                }
+            }
+        },
+        "capital": [
+            "Brasília"
+        ],
+        "landlocked": false,
+        "borders": [
+            "ARG",
+            "BOL",
+            "COL",
+            "GUF",
+            "GUY",
+            "PRY",
+            "PER",
+            "SUR",
+            "URY",
+            "VEN"
+        ]
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/bz.png",
+            "svg": "https://flagcdn.com/bz.svg",
+            "alt": "The flag of Belize has a royal blue field with a thin red horizontal band at the top and bottom of the field and the national coat of arms in the center."
+        },
+        "name": {
+            "common": "Belize",
+            "official": "Belize",
+            "nativeName": {
+                "bjz": {
+                    "official": "Belize",
+                    "common": "Belize"
+                },
+                "eng": {
+                    "official": "Belize",
+                    "common": "Belize"
+                },
+                "spa": {
+                    "official": "Belice",
+                    "common": "Belice"
+                }
+            }
+        },
+        "capital": [
+            "Belmopan"
+        ],
+        "landlocked": false,
+        "borders": [
+            "GTM",
+            "MEX"
+        ]
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/ve.png",
+            "svg": "https://flagcdn.com/ve.svg",
+            "alt": "The flag of Venezuela is composed of three equal horizontal bands of yellow, blue and red. At the center of the blue band are eight five-pointed white stars arranged in a horizontal arc."
+        },
+        "name": {
+            "common": "Venezuela",
+            "official": "Bolivarian Republic of Venezuela",
+            "nativeName": {
+                "spa": {
+                    "official": "República Bolivariana de Venezuela",
+                    "common": "Venezuela"
+                }
+            }
+        },
+        "capital": [
+            "Caracas"
+        ],
+        "landlocked": false,
+        "borders": [
+            "BRA",
+            "COL",
+            "GUY"
+        ]
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/sv.png",
+            "svg": "https://flagcdn.com/sv.svg",
+            "alt": "The flag of El Salvador is composed of three equal horizontal bands of cobalt blue, white and cobalt blue, with the national coat of arms centered in the white band."
+        },
+        "name": {
+            "common": "El Salvador",
+            "official": "Republic of El Salvador",
+            "nativeName": {
+                "spa": {
+                    "official": "República de El Salvador",
+                    "common": "El Salvador"
+                }
+            }
+        },
+        "capital": [
+            "San Salvador"
+        ],
+        "landlocked": false,
+        "borders": [
+            "GTM",
+            "HND"
+        ]
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/pe.png",
+            "svg": "https://flagcdn.com/pe.svg",
+            "alt": "The flag of Peru is composed of three equal vertical bands of red, white and red, with the national emblem centered in the white band."
+        },
+        "name": {
+            "common": "Peru",
+            "official": "Republic of Peru",
+            "nativeName": {
+                "aym": {
+                    "official": "Piruw Suyu",
+                    "common": "Piruw"
+                },
+                "que": {
+                    "official": "Piruw Ripuwlika",
+                    "common": "Piruw"
+                },
+                "spa": {
+                    "official": "República del Perú",
+                    "common": "Perú"
+                }
+            }
+        },
+        "capital": [
+            "Lima"
+        ],
+        "landlocked": false,
+        "borders": [
+            "BOL",
+            "BRA",
+            "CHL",
+            "COL",
+            "ECU"
+        ]
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/tt.png",
+            "svg": "https://flagcdn.com/tt.svg",
+            "alt": "The flag of Trinidad and Tobago has a red field with a white-edged black diagonal band that extends from the upper hoist-side corner to the lower fly-side corner of the field."
+        },
+        "name": {
+            "common": "Trinidad and Tobago",
+            "official": "Republic of Trinidad and Tobago",
+            "nativeName": {
+                "eng": {
+                    "official": "Republic of Trinidad and Tobago",
+                    "common": "Trinidad and Tobago"
+                }
+            }
+        },
+        "capital": [
+            "Port of Spain"
+        ],
+        "landlocked": false,
+        "borders": []
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/gl.png",
+            "svg": "https://flagcdn.com/gl.svg",
+            "alt": ""
+        },
+        "name": {
+            "common": "Greenland",
+            "official": "Greenland",
+            "nativeName": {
+                "kal": {
+                    "official": "Kalaallit Nunaat",
+                    "common": "Kalaallit Nunaat"
+                }
+            }
+        },
+        "capital": [
+            "Nuuk"
+        ],
+        "landlocked": false,
+        "borders": []
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/gy.png",
+            "svg": "https://flagcdn.com/gy.svg",
+            "alt": "The flag of Guyana has a green field with two isosceles triangles which share a common base on the hoist end. The smaller black-edged red triangle spanning half the width of the field is superimposed on the larger white-edged yellow triangle which spans the full width of the field."
+        },
+        "name": {
+            "common": "Guyana",
+            "official": "Co-operative Republic of Guyana",
+            "nativeName": {
+                "eng": {
+                    "official": "Co-operative Republic of Guyana",
+                    "common": "Guyana"
+                }
+            }
+        },
+        "capital": [
+            "Georgetown"
+        ],
+        "landlocked": false,
+        "borders": [
+            "BRA",
+            "SUR",
+            "VEN"
+        ]
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/jm.png",
+            "svg": "https://flagcdn.com/jm.svg",
+            "alt": "The flag of Jamaica is divided by a gold diagonal cross into four alternating triangular areas of green at the top and bottom, and black on the hoist and fly sides"
+        },
+        "name": {
+            "common": "Jamaica",
+            "official": "Jamaica",
+            "nativeName": {
+                "eng": {
+                    "official": "Jamaica",
+                    "common": "Jamaica"
+                },
+                "jam": {
+                    "official": "Jamaica",
+                    "common": "Jamaica"
+                }
+            }
+        },
+        "capital": [
+            "Kingston"
+        ],
+        "landlocked": false,
+        "borders": []
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/aw.png",
+            "svg": "https://flagcdn.com/aw.svg",
+            "alt": ""
+        },
+        "name": {
+            "common": "Aruba",
+            "official": "Aruba",
+            "nativeName": {
+                "nld": {
+                    "official": "Aruba",
+                    "common": "Aruba"
+                },
+                "pap": {
+                    "official": "Aruba",
+                    "common": "Aruba"
+                }
+            }
+        },
+        "capital": [
+            "Oranjestad"
+        ],
+        "landlocked": false,
+        "borders": []
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/ky.png",
+            "svg": "https://flagcdn.com/ky.svg",
+            "alt": ""
+        },
+        "name": {
+            "common": "Cayman Islands",
+            "official": "Cayman Islands",
+            "nativeName": {
+                "eng": {
+                    "official": "Cayman Islands",
+                    "common": "Cayman Islands"
+                }
+            }
+        },
+        "capital": [
+            "George Town"
+        ],
+        "landlocked": false,
+        "borders": []
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/cu.png",
+            "svg": "https://flagcdn.com/cu.svg",
+            "alt": "The flag of Cuba is composed of five equal horizontal bands of blue alternating with white and a red equilateral triangle superimposed on the hoist side of the field. The triangle has its base on the hoist end, spans about two-fifth the width of the field and bears a white five-pointed star at its center."
+        },
+        "name": {
+            "common": "Cuba",
+            "official": "Republic of Cuba",
+            "nativeName": {
+                "spa": {
+                    "official": "República de Cuba",
+                    "common": "Cuba"
+                }
+            }
+        },
+        "capital": [
+            "Havana"
+        ],
+        "landlocked": false,
+        "borders": []
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/uy.png",
+            "svg": "https://flagcdn.com/uy.svg",
+            "alt": "The flag of Uruguay is composed of nine equal horizontal bands of white alternating with blue, with a white square superimposed in the canton. In the white square is a yellow sun bearing a human face — the Sun of May — from which sixteen rays extend. The sun's rays alternate between triangular and wavy."
+        },
+        "name": {
+            "common": "Uruguay",
+            "official": "Oriental Republic of Uruguay",
+            "nativeName": {
+                "spa": {
+                    "official": "República Oriental del Uruguay",
+                    "common": "Uruguay"
+                }
+            }
+        },
+        "capital": [
+            "Montevideo"
+        ],
+        "landlocked": false,
+        "borders": [
+            "ARG",
+            "BRA"
+        ]
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/mf.png",
+            "svg": "https://flagcdn.com/mf.svg",
+            "alt": ""
+        },
+        "name": {
+            "common": "Saint Martin",
+            "official": "Saint Martin",
+            "nativeName": {
+                "fra": {
+                    "official": "Saint-Martin",
+                    "common": "Saint-Martin"
+                }
+            }
+        },
+        "capital": [
+            "Marigot"
+        ],
+        "landlocked": false,
+        "borders": [
+            "SXM"
+        ]
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/ag.png",
+            "svg": "https://flagcdn.com/ag.svg",
+            "alt": "The flag of Antigua and Barbuda has a red field with an inverted isosceles triangle based on the top edge and spanning the height of the field. This triangle has three horizontal bands of black, light blue and white, with the light blue band half the height of the two other bands. The top half of a golden-yellow sun is situated in the lower two-third of the black band to depict a rising sun."
+        },
+        "name": {
+            "common": "Antigua and Barbuda",
+            "official": "Antigua and Barbuda",
+            "nativeName": {
+                "eng": {
+                    "official": "Antigua and Barbuda",
+                    "common": "Antigua and Barbuda"
+                }
+            }
+        },
+        "capital": [
+            "Saint John's"
+        ],
+        "landlocked": false,
+        "borders": []
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/ca.png",
+            "svg": "https://flagcdn.com/ca.svg",
+            "alt": "The flag of Canada is composed of a red vertical band on the hoist and fly sides and a central white square that is twice the width of the vertical bands. A large eleven-pointed red maple leaf is centered in the white square."
+        },
+        "name": {
+            "common": "Canada",
+            "official": "Canada",
+            "nativeName": {
+                "eng": {
+                    "official": "Canada",
+                    "common": "Canada"
+                },
+                "fra": {
+                    "official": "Canada",
+                    "common": "Canada"
+                }
+            }
+        },
+        "capital": [
+            "Ottawa"
+        ],
+        "landlocked": false,
+        "borders": [
+            "USA"
+        ]
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/pa.png",
+            "svg": "https://flagcdn.com/pa.svg",
+            "alt": "The flag of Panama is composed of four equal rectangular areas — a white rectangular area with a blue five-pointed star at its center, a red rectangular area, a white rectangular area with a red five-pointed star at its center, and a blue rectangular area — in the upper hoist side, upper fly side, lower fly side and lower hoist side respectively."
+        },
+        "name": {
+            "common": "Panama",
+            "official": "Republic of Panama",
+            "nativeName": {
+                "spa": {
+                    "official": "República de Panamá",
+                    "common": "Panamá"
+                }
+            }
+        },
+        "capital": [
+            "Panama City"
+        ],
+        "landlocked": false,
+        "borders": [
+            "COL",
+            "CRI"
+        ]
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/ms.png",
+            "svg": "https://flagcdn.com/ms.svg",
+            "alt": ""
+        },
+        "name": {
+            "common": "Montserrat",
+            "official": "Montserrat",
+            "nativeName": {
+                "eng": {
+                    "official": "Montserrat",
+                    "common": "Montserrat"
+                }
+            }
+        },
+        "capital": [
+            "Plymouth"
+        ],
+        "landlocked": false,
+        "borders": []
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/ni.png",
+            "svg": "https://flagcdn.com/ni.svg",
+            "alt": "The flag of Nicaragua is composed of three equal horizontal bands of blue, white and blue, with the national coat of arms centered in the white band."
+        },
+        "name": {
+            "common": "Nicaragua",
+            "official": "Republic of Nicaragua",
+            "nativeName": {
+                "spa": {
+                    "official": "República de Nicaragua",
+                    "common": "Nicaragua"
+                }
+            }
+        },
+        "capital": [
+            "Managua"
+        ],
+        "landlocked": false,
+        "borders": [
+            "CRI",
+            "HND"
+        ]
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/pm.png",
+            "svg": "https://flagcdn.com/pm.svg",
+            "alt": ""
+        },
+        "name": {
+            "common": "Saint Pierre and Miquelon",
+            "official": "Saint Pierre and Miquelon",
+            "nativeName": {
+                "fra": {
+                    "official": "Collectivité territoriale de Saint-Pierre-et-Miquelon",
+                    "common": "Saint-Pierre-et-Miquelon"
+                }
+            }
+        },
+        "capital": [
+            "Saint-Pierre"
+        ],
+        "landlocked": false,
+        "borders": []
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/vi.png",
+            "svg": "https://flagcdn.com/vi.svg",
+            "alt": ""
+        },
+        "name": {
+            "common": "United States Virgin Islands",
+            "official": "Virgin Islands of the United States",
+            "nativeName": {
+                "eng": {
+                    "official": "Virgin Islands of the United States",
+                    "common": "United States Virgin Islands"
+                }
+            }
+        },
+        "capital": [
+            "Charlotte Amalie"
+        ],
+        "landlocked": false,
+        "borders": []
+    },
+    {
+        "flags": {
+            "png": "https://flagcdn.com/w320/ai.png",
+            "svg": "https://flagcdn.com/ai.svg",
+            "alt": ""
+        },
+        "name": {
+            "common": "Anguilla",
+            "official": "Anguilla",
+            "nativeName": {
+                "eng": {
+                    "official": "Anguilla",
+                    "common": "Anguilla"
+                }
+            }
+        },
+        "capital": [
+            "The Valley"
+        ],
+        "landlocked": false,
+        "borders": []
+    }
+]

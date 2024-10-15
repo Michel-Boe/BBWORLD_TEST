@@ -40,4 +40,25 @@ html:
 	6. Einstellungen: zweigeteilt links Einstellungen (3 Optionen) rechts Punktestand etc:
 
 
+		https://restcountries.com/v3.1/region/europe/all?fields=flags,name,capital
 
+		https://restcountries.com/v3.1/independent?status=true&fields=languages,capital
+
+
+		https://restcountries.com/v3.1/region/europe?independent?status=true&fields=flags,capital,name
+
+		independent?status=true&fields=languages,capital
+
+
+
+Alle aus Europa
+
+https://restcountries.com/v3.1/region/europe?fields=name,capital,independent,flags
+
+https://restcountries.com/v3.1/region/asia?fields=name,capital,independent,flags
+
+https://restcountries.com/v3.1/region/africa?fields=name,capital,independent,flags
+
+https://restcountries.com/v3.1/region/oceania?fields=name,capital,independent,flags
+
+https://restcountries.com/v3.1/region/americas?fields=name,capital,independent,flags
